@@ -1,4 +1,4 @@
-/* @author iosif miclaus (iosif dot miclaus at gmail dot com) */
+/* @author iosif miclaus */
 
 // images for background, foreground, live and bullet
 PImage bgImage, fgImage, lifeImage, bulletImage;
