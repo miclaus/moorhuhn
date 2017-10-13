@@ -25,7 +25,7 @@ class Chicken {
   private final int maxAmplitude = 30;
   private final float e = 2.71828182845904523536028;
   private final float g = 0.3;
-  private float fallGravity = g;
+  private float fallDensity = g;
 
   // constructor, only needs one parameter for the image that should be loaded for the chicken
   //  everything else will be randomly generated
@@ -96,18 +96,18 @@ class Chicken {
       // display the chicken
       image(chickenImage, xPos, yPos);
     } else {
-      // increase the gravity to have exponential values later on
-      fallGravity += 0.1;
+      // increase the density to have exponential values later on
+      fallDensity += 0.1;
       // exponentially increase the y-position
-      yPos += pow(e, fallGravity)/2;
+      yPos += pow(e, fallDensity)/2;
       
       // if the chicken disappeared from the bottom of the window
       if(yPos > height) {
         newSpeed();
         newPosition();
         dying = false;
-        // reset the fall gravity
-        fallGravity = g;
+        // reset the fall density
+        fallDensity = g;
       }
       
       // display the dead chicken
