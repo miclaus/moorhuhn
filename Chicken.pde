@@ -1,4 +1,4 @@
-/* @author iosif miclaus (iosif dot miclaus at gmail dot com) */
+/* @author iosif miclaus */
 class Chicken {
 
   private int xPos;
